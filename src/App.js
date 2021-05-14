@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import Header from './header.js'
 import Home from './home'
 import Login from './login'
-
+import Catelogue from './Catelogue'
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,12 +14,13 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Grocery Delivery</h1>
+      <h1 className="App-h1"><img src="/logo.png" height="75px"></img></h1>
       <Header/>
       <Router> 
         <Switch>
           <Route exact path="/Home" component={Home}/>
           <Route path="/Login" component={Login}/>
+          <Route path="/Catelogue" component={Catelogue}/>
         </Switch>
     </Router>
     </div> 
