@@ -13,7 +13,14 @@ export default function Header(){
     <Nav className="mr-auto">
       <Nav.Link href="/Home" true>Home</Nav.Link>
       <Nav.Link href="/Login">Login</Nav.Link>
-      <Nav.Link href="/Catelogue">Catelogue</Nav.Link>
+      <NavDropdown title="Location" id="basic-nav-dropdown">
+        <NavDropdown.Item href="/Catelogue">Kandukur</NavDropdown.Item>
+        <NavDropdown.Item href="/Catelogue1">Ongole</NavDropdown.Item>
+        <NavDropdown.Item href="/Catelogue2">Palukur</NavDropdown.Item>
+        <NavDropdown.Item href="/Catelogue3">Bhimavaram</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="/Other">Other</NavDropdown.Item>
+      </NavDropdown>
       <NavDropdown title="More" id="basic-nav-dropdown">
         <NavDropdown.Item href="/About">About</NavDropdown.Item>
         <NavDropdown.Item href="/Contact">Contact</NavDropdown.Item>
