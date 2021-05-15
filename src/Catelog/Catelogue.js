@@ -8,7 +8,7 @@ import { useHistory } from "react-router-dom";
 export default function Catelogue2(){
     const history = useHistory()
     function Shop1(){
-       history.push("/Home");
+       history.push("/items");
     }
     return( 
       <div className="catelog"> 

@@ -9,6 +9,7 @@ import About from './About'
 import Contact from './Contact'
 import Faqs from './Faqs'
 import Other from './Other'
+import Grocery from './Items/item1'
 import {
   BrowserRouter as Router,
   Switch,
@@ -33,6 +34,7 @@ function App() {
           <Route path="/About" component={About}/>
           <Route path="/Contact" component={Contact}/>
           <Route path="/Other" component={Other}/>
+          <Route path="/items" component={Grocery}/>
           <Route path="*" component={Home} />
         </Switch>
     </Router>

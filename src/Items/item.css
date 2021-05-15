@@ -1,0 +1,10 @@
+
+.item_style {
+    display:flex;
+  overflow-x: scroll;
+  overflow-y:hidden;
+    width:100%;
+    float: left;
+    height:500px;
+    position:relative;
+  }
