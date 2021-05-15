@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import Header from './header.js'
 import Home from './home'
-import Login from './login'
-import Catelogue from './Catelogue'
-import Catelogue1 from './Catelogue1'
-import Catelogue2 from './Catelogue2'
-import Catelogue3 from './Catelogue3'
+import Login from './forms/login'
+import Catelogue from './Catelog/Catelogue'
+import Catelogue1 from './Catelog/Catelogue1'
+import Catelogue2 from './Catelog/Catelogue2'
+import Catelogue3 from './Catelog/Catelogue3'
 import About from './About'
 import Contact from './Contact'
 import Faqs from './Faqs'
@@ -21,7 +20,6 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1 className="App-h1"><img src="/logo.png" height="75px"></img></h1>
       <Header/>
       <Router> 
         <Switch>

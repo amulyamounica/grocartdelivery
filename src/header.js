@@ -5,9 +5,9 @@ import {Navbar,NavDropdown,Nav,Form,FormControl,Button} from 'react-bootstrap'
 export default function Header(){
     return(
         <>
-        <div className="header">
-        <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="#home"><h4>GroCart</h4></Navbar.Brand>
+        <div  className="App-h1">
+        <Navbar bg="#9575CD" expand="lg">
+  <Navbar.Brand href="/Home" ><h4><img src="/logo.png" className="App-h1"></img></h4></Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
@@ -26,7 +26,7 @@ export default function Header(){
         <NavDropdown.Item href="/Contact">Contact</NavDropdown.Item>
         <NavDropdown.Item href="/Faqs">FAQ's</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+        <NavDropdown.Item href="/Other">Other</NavDropdown.Item>
       </NavDropdown>
     </Nav>
     <Form inline>
