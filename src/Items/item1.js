@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {item,groceries} from 'D:/mounicaProject/src/constants'
+import {item,groceries} from 'C:/Users/SRINIVAS/Grocart/grocartdelivery/src/constants'
 import {Card,Button} from 'react-bootstrap'
 import { AlignCenter, FileX, Shop } from 'react-bootstrap-icons'
 import { useHistory } from "react-router-dom";
