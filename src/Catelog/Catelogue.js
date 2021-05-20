@@ -1,17 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {item} from 'C:/Users/SRINIVAS/Grocart/grocartdelivery/src/constants'
+import {item} from 'C:/Users/mouni/gitpro/grocartdelivery/src/constants'
 import {Card,Button} from 'react-bootstrap'
 import { AlignCenter, FileX, Shop } from 'react-bootstrap-icons'
 import { useHistory } from "react-router-dom";
-
-export default function Catelogue2(){
+import "./Catelog.css"
+export default function Catelogue(){
     const history = useHistory()
     function Shop1(){
        history.push("/items");
     }
     return( 
-      <div className="catelog"> 
+      <div className="Catelog"> 
         {item.map(i =>{
                  return( 
         <div>

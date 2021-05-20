@@ -17,8 +17,11 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
+import  consts from "./consts.json"
 
 function App() {
+  localStorage.setItem("name","mounica");
+  localStorage.setItem("items",JSON.stringify(consts));
   return (
     <div className="App">
       <Header/>

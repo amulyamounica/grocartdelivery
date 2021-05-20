@@ -1,0 +1,32 @@
+{
+    "0":  {
+        "name": "Sugar",
+        "price": 30,
+        "quantity": 1,
+        "img":"./sugar.jpg",
+        "desc":"1kg packets"
+    },
+    "1":{
+        "name": "RockSalt",
+        "price": 22,
+        "quantity": 1,
+        "img":"./rockSalt.jpg",
+        "desc":"1kg packets"
+    },
+   "2": {
+        "name": "Almonds",
+        "price": 30,
+        "quantity": 1,
+        "img":"./Almonds.jpg",
+        "desc":"100g packets"
+    },
+   "3": {
+        "name": "Aashirvaad Salt",
+        "price": 20,
+        "quantity": 1,
+        "img":"./AashirvaadSalt.jpg",
+        "desc":"1kg packets"
+    }
+   
+ }
+ 

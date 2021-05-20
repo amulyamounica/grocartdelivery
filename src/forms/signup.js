@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './src/forms/Signup.css'
+import './Signup.css'
 
 
 
@@ -79,4 +79,4 @@ class Form extends Component {
     }
 }
 
-export default signup
+export default Form

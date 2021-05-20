@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {item,groceries} from 'C:/Users/SRINIVAS/Grocart/grocartdelivery/src/constants'
 import {Card,Button} from 'react-bootstrap'
 import { AlignCenter, FileX, Shop } from 'react-bootstrap-icons'
 import { useHistory } from "react-router-dom";
@@ -8,12 +7,21 @@ import "./item.css"
 
 export default function Grocery(){
     const history = useHistory()
-    function Shop1(){
+    function Shop1(k){
+        var cart=[]
+        cart.push(k);
+        localStorage.setItem("cart",JSON.stringify(cart))
        history.push("/Home");
+    }
+    var item1=JSON.parse(localStorage.getItem("items"));
+    var c=[]
+    for(var i in item1){
+        c.push(item1[i])
     }
     return( 
       <div className="item_style"> 
-        {groceries.map(i =>{
+        {
+        c.map(i =>{
                  return( 
         <form>
         <div>
@@ -26,7 +34,7 @@ export default function Grocery(){
             </br>
             Price:{i.price}
         </Card.Text>
-        <Button variant="primary" onClick={Shop1}>Add to cart</Button>
+        <Button variant="primary" onClick={()=>Shop1(i)}>Add to cart</Button>
   </Card.Body>
 </Card>
 </div>
